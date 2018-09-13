@@ -6,7 +6,7 @@ def prime?(num)
   if num < 2
     return is_it_prime = false    
   else 
-    for i in 1..half_num
+    for i in 1...half_num
      if num % i == 0 
        return is_it_prime = false
      end 
