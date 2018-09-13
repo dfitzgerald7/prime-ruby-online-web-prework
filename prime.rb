@@ -3,9 +3,11 @@
 def prime?(num)
   half_num = num/2 
   is_it_prime = true
-  if num < 3 
+  if num < 3 && num > -1
     return is_it_prime
-  end 
+ 
+  elsif num < 0
+    return is_it_prime = false    
   else 
     for i in 2..half_num
      if num % i == 0 
